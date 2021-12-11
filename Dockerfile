@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full-vnc
 
 USER root
-RUN apt update && apt install socat nasm netcat
+RUN apt update && apt install -y socat nasm netcat
 
 USER gitpod
 RUN pip install flask requests lxml
