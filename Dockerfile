@@ -11,4 +11,4 @@ RUN git clone https://github.com/longld/peda.git /home/gitpod/peda
 RUN git clone https://github.com/scwuaptx/Pwngdb.git /home/gitpod/Pwngdb
 RUN cp /home/gitpod/Pwngdb/.gdbinit /home/gitpod
 RUN pip install pwntools
-RUN gem install seccomp-tools one_gadget
+RUN . /home/gitpod/.bash_profile && gem install seccomp-tools one_gadget
